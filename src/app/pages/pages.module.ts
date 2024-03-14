@@ -13,6 +13,7 @@ import { ComponentsModule } from '../components/components.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 
 
@@ -23,7 +24,8 @@ import { RouterModule } from '@angular/router';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent          
+    PagesComponent,
+    AccountSettingComponent          
   ],
   imports: [
     CommonModule,
@@ -43,7 +45,8 @@ import { RouterModule } from '@angular/router';
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent  
+    PagesComponent,
+    AccountSettingComponent          
   ]
 })
 export class PagesModule { }
