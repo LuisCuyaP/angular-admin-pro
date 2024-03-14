@@ -1,0 +1,29 @@
+
+<div class="input-group">
+
+    <span class="input-group-btn">
+        <button [ngClass]="btnClass"
+                type="button"
+                (click)="cambiarValor(-5)">
+            <i class="fa fa-minus"></i>
+        </button>        
+    </span>
+
+<!--el isInvalid viene del bootstrap, entonces si progreso cumple esas condiciones el is invalid estara como true-->
+    <input type="number" 
+           class="form-control" 
+           [ngClass]="{'is-invalid': progreso > 100 || progreso < 0}"
+           placeholder="Progreso"
+           (ngModelChange)="onChange($event)"
+           [(ngModel)]="progreso">
+
+
+    <span class="input-group-btn">
+        <button [ngClass]="btnClass"
+                type="button"
+                (click)="cambiarValor(5)">
+            <i class="fa fa-plus"></i>
+        </button>
+    </span>
+
+</div>

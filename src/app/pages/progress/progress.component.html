@@ -1,1 +1,52 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar </h4>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-primary progress-bar-striped active" 
+                         style="height: 10px;"                          
+                         [style.width]="getProgreso1" 
+                         role="progressbar">
+                         
+                    </div>
+                </div>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-info progress-bar-striped active" 
+                         style="height: 10px;"                          
+                         [style.width]="getProgreso2"                         
+                         role="progressbar">
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <!--input() [valor] aca mando el valor 5 al componente hijo app incremendator, entonces en el app incrementador defino el input valor que reciba el valor 5 del componente padre -->
+
+            <!--output() cuando en el componente incrementador doy click al evento cambioValor se activa el emit valorSalido, entonces en el componente padre progress dispara el metodo cambiValorHijo donde $event recibe el valor de la variable progreso this.valorSalido.emit(this.progreso);-->
+            <!-- <div class="card-body">
+                <app-incrementador (valorSalido)="cambiValorHijo($event)" [valor]="10"></app-incrementador>
+            </div> -->
+
+            <!--aca en btnClass pongo la dieresis para que reconozca el guion en el btn btn-info-->
+            <div class="card-body">
+                <app-incrementador (valor)="progreso1 = $event" 
+                                   [valor]="progreso1"
+                                   [btnClass]="'btn-info'"></app-incrementador>
+            </div>
+        </div>       
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador (valor)="progreso2 = $event" [valor]="progreso2"></app-incrementador>
+            </div>
+        </div>       
+    </div>
+</div>

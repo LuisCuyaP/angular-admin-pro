@@ -21,7 +21,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     // RegisterComponent,
 
 
-    NopagefoundComponent,
+    NopagefoundComponent
+   
     
     // BreadcrumbsComponent,
     // SidebarComponent,
