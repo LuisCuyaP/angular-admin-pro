@@ -14,6 +14,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RjxsComponent } from './rjxs/rjxs.component';
 
 
 
@@ -25,7 +27,9 @@ import { AccountSettingComponent } from './account-setting/account-setting.compo
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    AccountSettingComponent          
+    AccountSettingComponent,
+    PromesasComponent,
+    RjxsComponent          
   ],
   imports: [
     CommonModule,

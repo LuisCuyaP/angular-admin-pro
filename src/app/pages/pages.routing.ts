@@ -5,6 +5,8 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { ProgressComponent } from "./progress/progress.component";
 import { Grafica1Component } from "./grafica1/grafica1.component";
 import { AccountSettingComponent } from "./account-setting/account-setting.component";
+import { PromesasComponent } from "./promesas/promesas.component";
+import { RjxsComponent } from "./rjxs/rjxs.component";
 
 //esto es una ruta hija por modulo
 const routes: Routes = [
@@ -20,7 +22,9 @@ const routes: Routes = [
            // localhost:4200/dashboard/progress
           { path: 'progress', component: ProgressComponent },
           { path: 'grafica1', component: Grafica1Component },
-          { path: 'account-settings', component: AccountSettingComponent }          
+          { path: 'account-settings', component: AccountSettingComponent },          
+          { path: 'promesas', component: PromesasComponent },
+          { path: 'rxjs', component: RjxsComponent }             
 
         ]
     }
